@@ -3,8 +3,11 @@ package com.example.keepnotes
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
@@ -21,8 +24,11 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.example.keepnotes.ui.theme.KeepNotesTheme
 import com.example.keepnotes.ui.theme.Purple40
 
@@ -35,9 +41,23 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
-                    topBar = { MyTopBar() }
+                    topBar = {
+                        Box() {
+                            Image(
+                                painter = painterResource(R.drawable.portada),
+                                contentDescription = "Track Image",
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .height(200.dp),
+                                contentScale = ContentScale.Crop
+                            )
+                        }
+                        MyTopBar()
+                    }
                 ) {
-                    Box(modifier = Modifier.fillMaxSize().padding(top = it.calculateTopPadding())) {
+                    Box(modifier = Modifier
+                        .fillMaxSize()
+                        .padding(top = it.calculateTopPadding())) {
 
                     }
                 }
@@ -51,7 +71,6 @@ class MainActivity : ComponentActivity() {
 fun MyTopBar() {
     TopAppBar(
         title = { Text(text = stringResource(id = R.string.app_name), color = Color.White) },
-        colors = TopAppBarDefaults.largeTopAppBarColors(containerColor = Purple40),
         navigationIcon = {
             IconButton(onClick = { }) {
                 Icon(imageVector = Icons.Filled.Menu,
