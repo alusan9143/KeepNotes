@@ -29,6 +29,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.keepnotes.ui.theme.KeepNotesTheme
 import com.example.keepnotes.ui.theme.Purple40
 
@@ -41,19 +42,7 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
-                    topBar = {
-                        Box() {
-                            Image(
-                                painter = painterResource(R.drawable.portada),
-                                contentDescription = "Track Image",
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .height(200.dp),
-                                contentScale = ContentScale.Crop
-                            )
-                        }
-                        MyTopBar()
-                    }
+                    topBar = { MyTopBar() }
                 ) {
                     Box(modifier = Modifier
                         .fillMaxSize()
@@ -69,16 +58,36 @@ class MainActivity : ComponentActivity() {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MyTopBar() {
-    TopAppBar(
-        title = { Text(text = stringResource(id = R.string.app_name), color = Color.White) },
-        navigationIcon = {
-            IconButton(onClick = { }) {
-                Icon(imageVector = Icons.Filled.Menu,
-                    contentDescription = "Back", tint = Color.White)
-            }
-        },
-        actions = {
-            Icon(imageVector = Icons.Filled.MoreVert, contentDescription = "Menú", tint = Color.White)
-        }
-    )
+    Box(modifier = Modifier.fillMaxWidth()) {
+        Image(
+            painter = painterResource(id = R.drawable.portada),
+            contentDescription = "null",
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(60.dp),
+            contentScale = ContentScale.Crop
+        )
+        TopAppBar(
+            title = {
+                Text(text = "KeepNotes", color = Color.White, fontSize = 20.sp)
+            },
+            navigationIcon = {
+                IconButton(
+                    onClick = {
+                    }
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Menu,
+                        contentDescription = null,
+                        tint = Color.White
+                    )
+                }
+            },
+            actions = {
+                Icon(imageVector = Icons.Filled.MoreVert, contentDescription = "Menú", tint = Color.White)
+            },
+            colors = TopAppBarDefaults.mediumTopAppBarColors(containerColor = Color.Transparent)
+        )
+    }
+
 }
