@@ -70,7 +70,7 @@ fun KeepNotesCards() {
                     Column(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .background(Color(0xFFFFE89F))
+                            .background(Color(0xFFFFE99F))
                     ) {
                         Text(
                             text = comment,
