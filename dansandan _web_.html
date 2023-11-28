@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><script type="text/javascript" async="" src="dansandan%20_web__fitxers/analytics.js"></script><script type="text/javascript" async="" src="dansandan%20_web__fitxers/js"></script>
+
+<script async="" src="dansandan%20_web__fitxers/gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WCBMB6');</script>
+
+<script src="dansandan%20_web__fitxers/platform.js" async="" defer="defer" gapi_processed="true"></script>
+<meta name="google-signin-client_id" content="936591851906.apps.googleusercontent.com">
+<title>dansandan: /web/</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="dns-prefetch" href="https://miarroba.st/">
+<meta name="title" content="WebFTP - Mi pagina web - Panel de control - Hosting">
+<meta name="content-type" content="text/html; charset=iso-8859-1">
+<meta name="robots" content="index,follow">
+<meta name="language" content="es">
+<meta name="viewport" content="width=1280">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta property="og:description" content="">
+<link rel="StyleSheet" href="dansandan%20_web__fitxers/jquery-ui.css" type="text/css" media="ALL">
+<link rel="StyleSheet" href="dansandan%20_web__fitxers/cabecera.css" type="text/css" media="ALL">
+<link rel="StyleSheet" href="dansandan%20_web__fitxers/miarroba.css" type="text/css" media="ALL">
+<link rel="StyleSheet" href="dansandan%20_web__fitxers/foros.css" type="text/css" media="ALL">
+<link rel="StyleSheet" href="dansandan%20_web__fitxers/all.min.css" type="text/css" media="ALL">
+<link rel="StyleSheet" href="dansandan%20_web__fitxers/webftp.css" type="text/css" media="ALL">
+<link rel="StyleSheet" href="dansandan%20_web__fitxers/dropzone.min.css" type="text/css" media="ALL">
+<!--[if lt IE 7]>
+<style type="text/css">
+.pngImg{behavior:url('/607f6b0b381bbc1f64fa027d62891071.htc');}
+</style>
+<![endif]-->
+<script type="text/javascript" src="dansandan%20_web__fitxers/api.js"></script>
+<script type="text/javascript" src="dansandan%20_web__fitxers/jquery.min.js"></script>
+<script type="text/javascript" src="dansandan%20_web__fitxers/jquery-ui.min.js"></script>
+<script type="text/javascript" src="dansandan%20_web__fitxers/jquery-ui-i18n.min.js"></script>
+<script type="text/javascript" src="dansandan%20_web__fitxers/miarroba.js"></script>
+<script type="text/javascript" src="dansandan%20_web__fitxers/lib.formelements.js"></script>
+<script type="text/javascript" src="dansandan%20_web__fitxers/dropzone.min.js"></script>
+<script type="text/javascript" src="dansandan%20_web__fitxers/lib.navigator.js"></script>
+<script type="text/javascript" src="dansandan%20_web__fitxers/listeners.js"></script>
+<script type="text/javascript" src="dansandan%20_web__fitxers/edit_area_full.js"></script>
+<script type="text/javascript">
+<!--
+$mia.antiFrame();
+$mia.tooltips('body');
+$mia.prepareHeaderSearch();
+var c_m_p = new checkMP();
+var maskFTP = {};
+maskFTP['date'] = '#{day}/#{month}/#{year}, #{time}';
+maskFTP['dir'] = '<i class="far fa-folder fa-fw" onclick="#{accFile}" title="Entrar en la carpeta" />#{file}';
+maskFTP['file'] = '<i class="far fa-file fa-fw" onclick="#{accFile}" title="Ir a la página" />#{file}';
+maskFTP['filenoweb'] = '#{file}';
+maskFTP['rename'] = '<input class="editFileName" onmousedown="#{accFocus}" onblur="#{accBlur}" type="text" value="#{name}" title="Haz clic para renombrar este fichero"/>';
+maskFTP['input'] = '<input type="checkbox" name="files[#{rowId}]" value="#{file}" onclick="checkMenu.marcar(this);" />';
+maskFTP['info1'] = '<b>#{size}</b> en <b>#{num}</b> archivos en este nivel';
+maskFTP['info2'] = '<b>#{ocupados}</b> Ocupados, <b>#{libres}</b> Libres';
+maskFTP['nofiles'] = '<tr class="tabla_sombra_1 formTr formMessageRow" ><td><i class="fas fa-exclamation-circle fa-fw fa-lg"></i>No hay elementos</td></tr>';
+maskFTP['row1'] = '<tr class="tabla_sombra_2" id="row_#{rowId}"><td class="colSelect">#{input}</td><td class="colFile">#{name}</td><td class="colSize">#{size}</td><td class="colDate">#{date}</td></tr>';
+maskFTP['row2'] = '<tr class="tabla_sombra_1" id="row_#{rowId}"><td class="colSelect">#{input}</td><td class="colFile">#{name}</td><td class="colSize">#{size}</td><td class="colDate">#{date}</td></tr>';
+
+var configWebFTP = {};
+configWebFTP['sessid'] = 'ugUy0Jrirj5ltilL8xq,-1';
+configWebFTP['url'] = '/webftp.php?id=2149629';
+configWebFTP['webbase'] = '/web';
+configWebFTP['host'] = 'https://dansandan.webcindario.com';
+configWebFTP['nombre'] = 'dansandan';
+configWebFTP['zip'] = true;
+configWebFTP['size'] = 26214400;
+configWebFTP['levels'] = 10;
+configWebFTP['edit'] = true;
+configWebFTP['editSize'] = 262144;
+configWebFTP['editExt'] = {"html":"html","htm":"html","php":"php","php3":"php","txt":"","js":"js","css":"css","xml":"xml"};
+configWebFTP['extensions'] = ["deny",["exe","com","scr","pif","cmd"]];
+configWebFTP['down'] = true;
+configWebFTP['downSize'] = 10240;
+configWebFTP['hourType'] = 'H';
+
+var langFTP = {};
+langFTP['langCode'] = 'es';
+langFTP['vacioGIF'] = 'https://miarroba.st/240/iconos/vacio.gif';
+langFTP['ningunFichero'] = 'Ningún fichero en la cola';
+langFTP['fichero'] = 'fichero';
+langFTP['size'] = 'Tamaño';
+langFTP['fecha'] = 'Fecha';
+langFTP['ascendente'] = 'Ascendente';
+langFTP['descendente'] = 'Descendente';
+langFTP['listandoPor'] = 'Listando "#{path}" por:';
+langFTP['ordenandoPor'] = 'Ordenando por:';
+langFTP['modoFicheros'] = 'Modo "ficheros" activado';
+langFTP['modoZIP'] = 'Modo "ZIP" activado';
+langFTP['cualquierArchivo'] = 'Cualquier archivo';
+langFTP['archivosZIP'] = 'Archivos ZIP';
+langFTP['confirmaEliminar'] = '¿Deseas eliminar realmente los archivos seleccionados?';
+langFTP['eliminando'] = 'Eliminando ficheros...';
+langFTP['demasiadosArchivos'] = 'Demasiados archivos seleccionados. Máximo 6 ficheros para editar';
+langFTP['noEditable'] = 'No se ha seleccionado ningún archivo editable';
+langFTP['demasiadosAbiertos'] = 'Demasiados archivos abiertos.\nCierre alguno antes de abrir otro.';
+langFTP['nombreNoValido'] = 'El nombre del fichero no es válido';
+langFTP['nombreFichero'] = 'Introduce el nombre del fichero';
+langFTP['errorLeerFichero'] = 'El fichero "#{name}" no ha podido leerse. Inténtelo de nuevo';
+langFTP['yaAbierto'] = 'El fichero "#{name}" ya está abierto';
+langFTP['existenModificados'] = 'Existe(n) #{num} fichero(s) modificado(s)';
+langFTP['ficheroModificado'] = 'El fichero ha sido modificado';
+langFTP['noSePudoGuardar'] = 'No se pudo guardar';
+langFTP['guardado'] = 'Guardado';
+langFTP['descomprimido'] = 'Descomprimido "#{name}"';
+langFTP['conErrores'] = 'con errores';
+langFTP['noSePudoDescomprimir'] = 'No se pudo descomprimir';
+langFTP['eliminado'] = 'eliminado';
+langFTP['ficherosEliminados'] = 'Ficheros eliminados';
+langFTP['subido'] = 'Subido';
+langFTP['carpetaCreada'] = 'Carpeta creada';
+langFTP['noRenombrado'] = 'No se pudo renombrar "#{name}" como "#{as}"';
+langFTP['renombrado'] = 'Renombrado "#{name}" como "#{as}"';
+langFTP['informe'] = 'Ver/ocultar informe';
+langFTP['deseasCerrar'] = '¿Deseas cerrar de todas formas?';
+langFTP['cancelar'] = 'Haz clic para cancelar';
+langFTP['tooBig'] = 'El tamaño de fichero es demasiado grande';
+langFTP['Examinar'] = 'Examinar';
+
+navigatorJS.base = false;
+navigatorJS.main = 'main';
+navigatorJS.hideMain = true;
+navigatorJS.sectors = {'main':'https://miarroba.st/240/javascript/lib.webftp.js'};
+navigatorJS.init();
+
+$(function(){ $('.checkerselect').prop("selectedIndex", -1).change(function(){ var t = $(this); uCheck(t.val()+'','marcar'); setTimeout(function(){t.prop("selectedIndex", -1);},1000); }); })
+
+var checkMenuCfg ={};
+var checkMenu ={};
+checkMenuCfg.marcar={s:'input[name^=\'files\']',n:'0',ok:function(){enableButton('accion');},ko:function(){disableButton('accion');}};
+checkMenu.marcar = function(e){uCheck('checkBoxSelection','marcar',e);}
+ENVIANDO_DATOS = 'Cargando...'
+new disableOnSubmit('#formFiles');
+//-->
+</script>
+<link rel="search" type="application/opensearchdescription+xml" title="Miarroba" href="https://servicios.miarroba.com/opensearch.php">
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hosting","item":"\/"},{"@type":"ListItem","position":2,"name":"Panel de control","item":"\/cpanel.php"},{"@type":"ListItem","position":3,"name":"Mi pagina web","item":"\/info.php?id=2149629"},{"@type":"ListItem","position":4,"name":"WebFTP","item":"\/webftp.php?id=2149629"}]}</script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><style type="text/css">
+</style><script type="text/javascript" src="dansandan%20_web__fitxers/es.js" charset="UTF-8"></script><script type="text/javascript" src="dansandan%20_web__fitxers/html.js" charset="UTF-8"></script></head>
+<body><table class="infoWindow" style="z-index: 20001;"><tbody><tr><td class="infoWindowContent"><table class="mWin"><tbody><tr><td class="grey allRounded"><div style="position:relative;"><div id="imgClosePop" style="" title="Cerrar" onclick="$mia.lightBox.accClose()"><span class="close"></span></div><div id="lightboxAnimation" style="width: 900px; height: auto;"><div style="position: static; visibility: visible;"><form><textarea name="inlineFileEditor" id="inlineFileEditor" style="width: 900px; height: 450px; display: none;"></textarea><iframe name="frame_inlineFileEditor" id="frame_inlineFileEditor" style="border-width: 0px; overflow: hidden; display: inline; width: 900px; height: 450px;" frameborder="0"></iframe></form></div></div></div></td></tr></tbody></table></td></tr></tbody></table><div class="infoWindow" style="z-index: 20000; opacity: 0.7; background: rgb(0, 0, 0);"></div>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCBMB6"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="layout_miarroba"><div id="layout_header"><div id="miarroba_header"><a class="miarrobaLogoNormal" href="https://miarroba.com/"><img src="dansandan%20_web__fitxers/normal.png" class="loading" data-was-processed="true" id="jQuery_anonymous_element_5" miatooltip="miarroba"></a><div id="user_box"><input id="headerSearch" type="text" placeholder="Buscar en miarroba ..." class="ui-autocomplete-input" autocomplete="off"><a href="https://miarroba.com/daniel_si" class="profileLink userLink" title="Mi perfil"><img src="dansandan%20_web__fitxers/Sense%20t%C3%ADtol.png" class="loading" data-was-processed="true"><span class="onlyDesktop">daniel_si</span></a><a href="https://privados.miarroba.com/" class="userLink" title="Mensajes privados"><i class="fas fa-envelope fa-fw fa-lg"></i>0</a><a href="https://miarroba.com/?view=recv" class="userLink" title="Menciones"><i class="fas fa-bell fa-lg"></i>0</a><a title="Haz clic aquí para desconectarte como usuario registrado" href="https://miarroba.com/usuarios/desconectar.php"><i class="fas fa-sign-out-alt fa-lg"></i><span class="onlyDesktop">Salir</span></a></div></div></div><div id="layout_navigation"><div id="miarroba_navigation"><a href="https://miarroba.com/" class="inicio" id="jQuery_anonymous_element_11" miatooltip="Inicio"><i class="fas fa-home"></i></a><i class="fas fa-chevron-right fa-xs"></i><a href="https://hosting.miarroba.com/">Hosting</a><i class="fas fa-chevron-right fa-xs"></i><a href="https://hosting.miarroba.com/cpanel.php">Panel de control</a><i class="fas fa-chevron-right fa-xs"></i><a href="https://hosting.miarroba.com/info.php?id=2149629">Mi pagina web</a><i class="fas fa-chevron-right fa-xs"></i><a href="https://hosting.miarroba.com/webftp.php?id=2149629" class=" selected">WebFTP</a></div></div>
+<div id="layout_container"><div id="miarroba_container"><div class="warningMessage"><i class="fas fa-exclamation-circle"></i><span><b>ATENCION:</b> Tu Espacio WEB no tiene una pagina de inicio correcta. Para que tu espacio funcione correctamente, tienes que subir por <b>FTP</b> o <b>WebFTP</b> el fichero index de tu página, <b>index.html</b>, o <b>index.php</b> si estás usando el soporte de lenguaje PHP.</span></div><div class="menuIconBox"><a href="https://hosting.miarroba.com/modificar.php?id=2149629" class="menuIcon" id="jQuery_anonymous_element_4" miatooltip="Modificar espacio WEB"><div class="icon"><i class="fas fa-cog"></i></div><div class="miPill">Modificar</div></a><a title="Usa tu propio dominio en este servicio" href="https://hosting.miarroba.com/domain.php?id=2149629" class="menuIcon"><div class="icon"><i class="fas fa-globe"></i></div><div class="miPill">Dominio</div></a><a href="https://hosting.miarroba.com/webftp.php?id=2149629" class="selected menuIcon" id="jQuery_anonymous_element_1" miatooltip="WebFTP"><div class="icon"><i class="fas fa-network-wired"></i></div><div class="miPill">WebFTP</div></a><a title="PHP" href="https://hosting.miarroba.com/php.php?id=2149629" class="menuIcon"><div class="icon"><i class="fas fa-code"></i></div><div class="miPill">PHP</div></a><a title="MySQL" href="https://hosting.miarroba.com/mysql.php?id=2149629" class="menuIcon"><div class="icon"><i class="fas fa-database"></i></div><div class="miPill">MySQL</div></a><a title="Mail" href="https://hosting.miarroba.com/mail.php?id=2149629" class="menuIcon"><div class="icon"><i class="fas fa-envelope"></i></div><div class="miPill">Mail</div></a><a href="https://hosting.miarroba.com/log.php?id=2149629" class="menuIcon" id="jQuery_anonymous_element_6" miatooltip="Log"><div class="icon"><i class="fas fa-desktop"></i></div><div class="miPill">Log</div></a><a href="https://hosting.miarroba.com/stats.php?id=2149629" class="menuIcon" id="jQuery_anonymous_element_9" miatooltip="Estadísticas"><div class="icon"><i class="fas fa-chart-line"></i></div><div class="miPill">Estadísticas</div></a><a title="Elimina el medidor de usuarios online por completo" href="https://hosting.miarroba.com/eliminar.php?id=2149629" class="menuIcon"><div class="icon"><i class="fas fa-minus-circle"></i></div><div class="miPill">Eliminar</div></a></div><div><div class="tipBox"><div class="icon"><i class="fas fa-lightbulb"></i></div><div class="text">Para que tus ficheros sean <b>accesibles desde internet</b><br>
+tienes que subir tus ficheros dentro de la carpeta <b>"web"</b></div><div class="close" onclick="jQuery(this.parentNode.parentNode).slideUp(400);$mia.setCookie('miaTipBox[TipNewPathHosting]','1',1716404344,false,false);" title="Cerrar"><i class="fas fa-times"></i></div></div></div><div class="boxTable"><div class="boxTitle"><i class="fas fa-caret-right"></i> <span id="pathFTP" onclick="Listen.fire('selectPath')" miatooltip="dansandan: /" title="dansandan: /web/">dansandan: /web/</span></div><div class="tablaFormularioAcciones"><div class="tablaBotonesAccion left"><input onchange="" type="hidden" name="marcar" id="marcar"><div id="menu_selector_marcar" class="taSelector" style="display:none;"><div class="taSelectorbody"><div class="optionList"><a onclick="uCheck('checkAll','marcar');" rel="1" class="option">Todos</a><a onclick="uCheck('uncheckAll','marcar');" rel="2" class="option">Ninguno</a><a onclick="uCheck('invertSelection','marcar');" rel="3" class="option">Invertir selección</a></div></div></div><div class="tbSpM"><button class="taMn" name="marcar" id="selector_marcar" type="button" onmouseover="multiButtonEffects(this);" disabledonclick="new menuoptions('marcar');"><i class="far fa-check-square"></i>Seleccionar</button></div><input onchange="" type="hidden" name="accion" id="accion" value="1"><div class="tbSpM"><button class="taMn" name="accion" id="selector_accion" type="button" onmouseover="multiButtonEffects(this);" disabledonclick="new menuoptions('accion');"><i class="fas fa-tools"></i> Acción</button></div><span style="padding-left:15px;"></span><input onchange="" type="hidden" name="nuevo" id="nuevo" value="1"><div class="tbSpM"><button class="taMn" onclick="new menuoptions('nuevo');" name="nuevo" id="selector_nuevo" type="button" onmouseover="multiButtonEffects(this);"><i class="fas fa-plus-circle"></i>Nuevo</button></div></div><div class="tablaBotonesAccion right"><div class="tbSp"><a class="taBt dz-clickable" name="mia-dropzone" id="mia-dropzone" onmouseover="multiButtonEffects(this);"><i class="fas fa-cloud-upload-alt"></i> Subir</a></div></div></div><table class="tabla"><tbody><tr class="tabla_sombra_4"><td class="colSelect"><input type="checkbox" disabled="disabled"></td><td class="colFile"><a id="sfile" href="#!" onclick="return navigatorJS.current().changeOrder(this);" class="noOutline sortLink selecteda">Fichero</a></td><td class="colSize"><a id="ssize" href="#!" onclick="return navigatorJS.current().changeOrder(this);" class="noOutline sortLink">Tamaño</a></td><td class="colDate"><a id="sdate" href="#!" onclick="return navigatorJS.current().changeOrder(this);" class="noOutline sortLink">Fecha</a></td></tr></tbody></table><div id="fileScroll" style="height:400px;overflow:auto;"><div class="boxTable"><form method="POST" action="/webftp.php?id=2149629" id="formFiles">
+<table class="tabla" id="webFtpFileList" cellpadding="4px" style="width: 1200px;"><tbody><tr class="tabla_sombra_2" id="row_4142873384"><td class="colSelect"></td><td class="colFile"><i class="far fa-folder fa-fw" onclick="navigatorJS.loaded['main'].moveDir('4142873384')" title="Entrar en la carpeta"></i>..</td><td class="colSize"></td><td class="colDate"></td></tr></tbody></table><input type="hidden" name="cmd" id="cmd" value="rem"><input type="hidden" name="path" id="path" value=""><input type="hidden" name="actionKey" value="a0f42f99f2109a6911727f064a055c0f" id="actionKey"></form></div></div><div class="boxFooter"><div class="paginacionTablaFormulario"><div class="paginador"><div id="infoFiles2"><b>8.00 KB</b> Ocupados, <b>499.99 MB</b> Libres</div></div><div class="elementos"><div id="infoFiles1"><b>0 B</b> en <b>0</b> archivos en este nivel</div></div></div></div></div><div id="logFTP" class="whiteBox siPadding allRounded"><div class="iconlog infolog"><b>[20:00]</b> Listando "/web/" por: fichero (Ascendente)</div><div class="iconlog oklog"><b>[20:00]</b> eliminado: "index.html"</div><div class="iconlog infolog"><b>[20:00]</b> Eliminando ficheros...</div><div class="iconlog oklog"><b>[20:00]</b> Guardado: index.html</div><div class="iconlog oklog"><b>[20:00]</b> eliminado: "index.html"</div><div class="iconlog infolog"><b>[20:00]</b> Eliminando ficheros...</div></div></div></div><div id="layout_footer"><div id="miarroba_footer"><div id="miarroba_footer_menu"><div class="footerCopyright">© 2023 Miarroba Networks, SL</div><ul class="footerMenu"><li><strong>Servicios</strong></li><li><a href="https://foros.miarroba.com/">Foros</a></li><li><a href="https://hosting.miarroba.com/">Hosting</a></li><li><a href="https://fotos.miarroba.com/">Fotos</a></li><li><a href="https://fotologs.miarroba.com/">Fotologs</a></li></ul><ul class="footerMenu"><li><strong>Otras páginas</strong></li><li><a href="https://soporte.miarroba.com/news/">Noticias</a></li><li><a href="https://buscar.miarroba.com/">Buscar</a></li><li><a href="https://whois.miarroba.com/">Whois</a></li><li><a href="https://soporte.miarroba.com/">Soporte</a></li></ul><ul class="footerMenu"><li><strong>Nuestra Red</strong></li><li><a href="https://gsmspain.com/">gsmspain.com</a></li><li><a href="https://avatares.org/">avatares.org</a></li><li><a href="https://miguia.tv/">miguia.tv</a></li><li><a href="https://emuspain.com/">EMUspain.com</a></li></ul><ul class="footerMenu"><li><strong>Nosotros</strong></li><li><a href="https://servicios.miarroba.com/contacta.php">Contacto</a></li><li><a href="https://servicios.miarroba.com/privacidad.php">Privacidad</a></li><li><a href="https://servicios.miarroba.com/terms/">Condiciones</a></li><li><a href="https://servicios.miarroba.com/cookies/">Cookies</a></li></ul><ul class="footerMenu"><li><strong>Redes</strong></li><li><a href="https://twitter.com/miarroba" target="_blank"><i class="fab fa-twitter-square fa-lg icotwitter"></i>@miarroba</a></li><li><a href="https://www.facebook.com/miarroba/" target="_blank"><i class="fab fa-facebook-square fa-lg icofacebook"></i>miarroba</a></li></ul></div></div></div></div><script>(function(w, d){var b = d.getElementsByTagName('body')[0];var s = d.createElement("script"); s.async = true;var v = !("IntersectionObserver" in w) ? "8.7.1" : "10.5.2";s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";w.lazyLoadOptions = {};b.appendChild(s);}(window, document));</script><script async="" src="dansandan%20_web__fitxers/lazyload.min.js"></script><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><input type="file" multiple="multiple" class="dz-hidden-input" tabindex="-1" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><div id="menu_selector_accion" class="taSelector" style="top: 507px; left: 492.05px; min-width: 71px; display: none;"><div class="taSelectorbody"><div class="optionList"><a onclick="Listen.fire('delFiles')" rel="1" class="option menuopener"><i class="fas fa-trash-alt fa-fw"></i> Borrar</a><a onclick="Listen.fire('downFiles')" rel="2" class="option menuopener"><i class="fas fa-cloud-download-alt fa-fw"></i> Descargar</a><a onclick="Listen.fire('editFiles')" rel="3" class="option menuopener"><i class="fas fa-edit fa-fw"></i> Editar</a></div></div></div><div id="menu_selector_nuevo" class="taSelector" style="top: 507px; left: 609.567px; min-width: 66px; display: none;"><div class="taSelectorbody"><div class="optionList"><a onclick="Listen.fire('newFile')" rel="1" class="option menuopener"><i class="fas fa-file"></i> Fichero</a><a onclick="Listen.fire('newDir')" rel="2" class="option menuopener"><i class="fas fa-folder"></i> Carpeta</a></div></div></div></body></html>
